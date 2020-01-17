@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Renseignememt</title>
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#4BFF33">
+	<link rel="shortcut icon" type="image/png" href="zeldaico.png">
+</head>
+
+<body>
+    <header><h2>Renseignements</h2></header>
+
+     <form method="post" action="traitement.php">
+        <fieldset>
+        	<legend><h3>Civilités</h3></legend>
+	     	<p>
+	     		<label for="Nomsetprenoms">Noms et Prénoms</label>
+	            <input type="text" name="Nomsetprenoms" id="Nomsetprenoms" placeholder="Roméo juliette" autofocus required><hr>
+	            <label for="number">Date de naissance</label>
+	            <input type="Date" required><hr>
+
+	     	    <label for="Email">Adresse Email</label>
+	     	    <input type="email" name="Email" id="Email" placeholder="abcd@gmail.com" required><hr>
+	    	    Sexe:  <label for="Masculin">Masculin</label><input type="radio" name="Sexe" value="Masculin" id="Masculin" required><label for="Feminin">Feminin</label><input type="radio" name="Sexe" value="Feminin" id="Feminin" required>
+	    	</p>
+    	</fieldset>
+       <fieldset>
+       	<legend><h3>Formation</h3></legend>
+            <p>
+	        	<label for="Dernierdiplome">Quel est votre dernier diplôme ?</label>
+	        	<select name="Dernierdiplome" required="required">
+	        		<option value="Bac">Bac</option>
+	        		<option value="Bac+2">Liscence</option>
+	        		<option value="Bac+3" selected>Liscence 2</option>
+	        		<option value="Bac+5">Master</option>
+	        		<option value="Bac+9">Doctorat</option>
+	        	</select><hr>
+	        	Centres d'interêt<br>
+	        	<input type="checkbox" name="choix" id="choix1"><label for="choix1">Basket-ball</label>
+	        	<input type="checkbox" name="choix" id="choix2"><label for="choix2">Football</label>
+	        	<input type="checkbox" name="choix" id="choix3"><label for="choix3">Jeux-vidéos</label><br>
+	        	<label for="Autres">Autres</label>
+	        	<input type="textarea" name="Autres"><hr>
+	        	<label for="comment">Commentaires</label>
+	        	<textarea maxlength="150" name="comment"></textarea><hr>
+	        	<input type="checkbox" name="conditions" required><label for="conditions">En cochant ici vous acceptez les conditions d'utilisations des données de ce formulaire.</label>
+	        </p>
+	   </fieldset>
+	   <input type="submit" value="Envoyer">     
+     </form>
+</body>
+</html>
