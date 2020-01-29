@@ -5,29 +5,31 @@
 	<meta charset="utf-8">
 	<meta name="theme-color" content="#4BFF33">
 	<link rel="shortcut icon" type="image/png" href="zeldaico.png">
+	<link href=".././SITE/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header><h2>Renseignements</h2></header>
+    <header><p>Renseignements</p></header>
 
      <form method="post" action="traitement.php">
+     	<main>
         <fieldset>
-        	<legend><h3>Civilités</h3></legend>
+        	<legend><p class="imp">Civilités</p></legend>
 	     	<p>
-	     		<label for="Nomsetprenoms">Noms et Prénoms</label>
+	     		<label for="Nomsetprenoms"><p>Noms et Prénoms</p></label>
 	            <input type="text" name="Nomsetprenoms" id="Nomsetprenoms" placeholder="Roméo juliette" autofocus required><hr>
-	            <label for="number">Date de naissance</label>
+	            <label for="number"><p>Date de naissance</p></label>
 	            <input type="Date" required><hr>
 
-	     	    <label for="Email">Adresse Email</label>
+	     	    <label for="Email"><p>Adresse Email</p></label>
 	     	    <input type="email" name="Email" id="Email" placeholder="abcd@gmail.com" required><hr>
-	    	    Sexe:  <label for="Masculin">Masculin</label><input type="radio" name="Sexe" value="Masculin" id="Masculin" required><label for="Feminin">Feminin</label><input type="radio" name="Sexe" value="Feminin" id="Feminin" required>
+	    	    Sexe:  <label for="Masculin"><p>Masculin</p></label><input type="radio" name="Sexe" value="Masculin" id="Masculin" required><label for="Feminin"><p>Feminin</p></label><input type="radio" name="Sexe" value="Feminin" id="Feminin" required>
 	    	</p>
     	</fieldset>
        <fieldset>
-       	<legend><h3>Formation</h3></legend>
+       	<legend><p class="imp">Formation</p></legend>
             <p>
-	        	<label for="Dernierdiplome">Quel est votre dernier diplôme ?</label>
+	        	<label for="Dernierdiplome"><p>Quel est votre dernier diplôme ?</p></label>
 	        	<select name="Dernierdiplome" required="required">
 	        		<option value="Bac">Bac</option>
 	        		<option value="Bac+2">Liscence</option>
@@ -36,16 +38,16 @@
 	        		<option value="Bac+9">Doctorat</option>
 	        	</select><hr>
 	        	Centres d'interêt<br>
-	        	<input type="checkbox" name="choix" id="choix1"><label for="choix1">Basket-ball</label>
-	        	<input type="checkbox" name="choix" id="choix2"><label for="choix2">Football</label>
-	        	<input type="checkbox" name="choix" id="choix3"><label for="choix3">Jeux-vidéos</label><br>
-	        	<label for="Autres">Autres</label>
+	        	<input type="checkbox" name="choix" id="choix1"><label for="choix1"><p>Basket-ball</p></label>
+	        	<input type="checkbox" name="choix" id="choix2"><label for="choix2"><p>Football</p></label>
+	        	<input type="checkbox" name="choix" id="choix3"><label for="choix3"><p>Jeux-vidéos</p></label><br>
+	        	<label for="Autres"><p>Autres</p></label>
 	        	<input type="textarea" name="Autres"><hr>
-	        	<label for="comment">Commentaires</label>
+	        	<label for="comment"><p>Commentaires</p></label>
 	        	<textarea maxlength="150" name="comment"></textarea><hr>
-	        	<input type="checkbox" name="conditions" required><label for="conditions">En cochant ici vous acceptez les conditions d'utilisations des données de ce formulaire.</label>
+	        	<input type="checkbox" name="conditions" required><label for="conditions"><p>En cochant ici vous acceptez les conditions d'utilisations des données de ce formulaire.</p></label>
 	        </p>
-	   </fieldset>
+	   </fieldset></main>
 	   <input type="submit" value="Envoyer">     
      </form>
 </body>
